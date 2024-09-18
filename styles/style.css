@@ -1,0 +1,286 @@
+/* GENERAL */
+
+:root {
+    --color-primary: #009600;
+}
+
+/* Text selection color */
+::-moz-selection {
+    color: #fff;
+    background: var(--color-primary);
+}
+::selection {
+    color: #fff;
+    background: var(--color-primary);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+}
+
+/* DEFAULT */
+
+h2 {
+    color: #333;
+    padding-top: 6rem;
+    margin-bottom: 2rem;
+    border-bottom: 4px solid var(--color-primary);
+    display: inline-block;
+}
+
+h3 {
+    color: #555;
+    /* padding-top: 1rem; */
+    margin-bottom: 1rem;
+}
+
+.flex {
+    display: flex;
+    gap: 1rem;
+    overflow-x: scroll;
+    padding-bottom: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+main {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+ul {
+    padding-right: 2rem;
+    color: #555;
+}
+li {
+    font-size: 1.4rem;
+    list-style:inside;
+}
+
+
+/* HEADER */
+
+header {
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.heading {
+    display: inline-block;
+    position: relative;
+    padding: 0 5rem;
+}
+.tag {
+    font-size: 12px;
+    padding: 6px 12px;
+    color: #fff;
+    background: #00960080;
+    border-radius: 4px;
+    display: inline-block;
+    transform: rotateZ(-25deg);
+    position: absolute;
+    left: 0;
+}
+h1 {
+    margin-top: 8px;
+    /* border-bottom: 4px solid var(--color-primary); */
+}
+
+
+/* HERO */
+
+.hero {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+table {
+    /* border: 1px dashed #ccc; */
+    border-radius: 5px;
+}
+
+tr {
+    background: #f8f8f8;
+}
+tr > * {
+    padding: 0.6rem;
+}
+th {
+    display: flex;
+    justify-content: start;
+    text-align: left;
+}
+
+.hero-video {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    text-decoration: none;
+    color: #fff;
+    background: var(--color-primary);
+}
+
+.vidimg {
+    max-width: 90vw;
+    width: 500px;
+    border-radius: 8px;
+}
+
+
+/* MODAL */
+
+.modal {
+    height: 90vh;
+    width: 90vw;
+    z-index: 5;
+    background: #000a;
+}
+.modal div {
+    padding: 2rem;
+    background: #fff;
+}
+
+
+/* FLOW */
+
+.flowimg {
+    max-width: 90vw;
+    width: 500px;
+    border-radius: 8px;
+}
+
+
+/* DESIGN */
+
+.design-system {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    padding-top: 1rem;
+}
+
+.logo {
+    margin-top: 2rem;
+}
+
+.font {
+    font-size: 6rem;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.colors {
+    display: flex;
+    gap: 1rem;
+}
+.color {
+    width: 80px;
+    height: 80px;
+    border-radius: 16px;
+    background: #000;
+}
+.c1 {
+    background: #111;
+}
+.c2 {
+    background: #eee;
+}
+.c3 {
+    background: #00B812;
+}
+
+
+/* WIREFRAMES */
+
+
+
+/* USER INTERFACE */
+
+.screens {
+    display: flex;
+    gap: 1rem;
+    overflow-x: scroll;
+    padding-bottom: 1rem;
+}
+.screen {
+    width: 200px;
+    border-radius: 4px;
+}
+
+.wf .screen {
+    opacity: 0.5;
+}
+.ui .screen {
+    box-shadow: 0px 0px 8px #aaa;
+}
+.ui {
+    box-shadow: 0px 0px 8px #ccc;
+}
+
+
+/* TECH STACK */
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    border: 1px solid #eee;
+    border-radius: 500px;
+}
+.icon {
+    width: 64px;
+}
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 2rem;
+    border-top: 1px solid #eee;
+}
+footer p {
+    color: #333;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Media Query */
+
+@media only screen and (max-width: 720px) {
+    .grid, .hero, .design-system {
+        grid-template-columns: 1fr;
+    }
+    .icon {
+        width: 48px;
+    }
+}
