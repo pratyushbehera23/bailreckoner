@@ -10,7 +10,7 @@ A project for SIH24 problem by Ministry of Law & Justice.
 
 The Bail Reckoner aims to simplify and expedite the bail application and evaluation process by considering various legal and procedural parameters.
 
-- **Objective**: Parameters to Consider for integration in the Tool:
+- **Parameters**: Parameters to Consider for integration in the Tool:
 
 1. Nature of the Offense and Penal Provisions: o Seek the inputs for the charges framed (can be multiple charges, and if they are compoundable etc). In this regard Statutes like Indian Penal Code,1860 and the upcoming Bhartiya Nyaya Sanhita 2023; Bhartiya Suraksha Sanhita 2023; and Bhartiya Saakshya Adhiniyam 2023; should be covered. Special statutes on the following under-mentioned areas should also be covered: 1. Cyber Crimes 2. Crimes Against SCs and STs: 3. Crimes Against Women 4. Crimes Against Children 5. Offences Against the State 6. Economic Offence 7. Crimes Against Foreigners a. Develop a comprehensive backend database to map penalties with sections of various Acts/Laws. b. Link and provide detailed information on the nature of offenses and corresponding legal provisions.
 

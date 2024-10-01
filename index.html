@@ -35,14 +35,16 @@
                         <tr>
                             <th>Parameters:</th>
                             <td>
-                                Parameters to Consider for integration in the Tool:
-                                <ol>
-                                    <li><p>Nature of the Offense and Penal Provisions: o Seek the inputs for the charges framed (can be multiple charges, and if they are compoundable etc). In this regard Statutes like Indian Penal Code,1860 and the upcoming Bhartiya Nyaya Sanhita 2023; Bhartiya Suraksha Sanhita 2023; and Bhartiya Saakshya Adhiniyam 2023; should be covered. Special statutes on the following under-mentioned areas should also be covered: 1. Cyber Crimes 2. Crimes Against SCs and STs: 3. Crimes Against Women 4. Crimes Against Children 5. Offences Against the State 6. Economic Offence 7. Crimes Against Foreigners a. Develop a comprehensive backend database to map penalties with sections of various Acts/Laws. b. Link and provide detailed information on the nature of offenses and corresponding legal provisions.</p></li>
-                                    <li><p>Duration of Imprisonment Already Served: a. Track the duration of imprisonment undertrial prisoner has served. b. Highlight the eligibility timeline for bail based on the time already served.</p></li>
-                                    <li><p>Considerations of Judge’s Discretion: a. Evaluate the risk of the undertrial prisoner escaping the judicial process, such as leaving the country. b. Assess the potential influence the prisoner may have on evidence or witnesses.</p></li>
-                                    <li><p>Procedural Pre-requisites: a. Outline requirements such as surety bonds, personal bonds, fines (if applicable), and identity verification. b. Ensure compliance with procedural aspects under IPC/CrPC.</p></li>
-                                    <li><p>Judicial Pronouncements on Bail Eligibility: a. Integrate key judicial pronouncements regarding bail eligibility. b. Automatically identify undertrial prisoners who are eligible for bail if they have served half the term during the undertrial stage, based on the prescribed sentence for their charges. Solution Requirements . The Bail Reckoner should be a user-friendly, plug-and-play tool that can be integrated into existing software systems. It must provide a clear and accessible interface for: 1. Undertrial Prisoners: To understand their eligibility and process for applying for bail. 2. Legal Aid Providers: To assist in preparing and submitting accurate bail applications. 3. Judicial Authorities: To streamline the evaluation process and ensure timely decisions. By leveraging technology and innovation, the Bail Reckoner aims to make the bail process more transparent, efficient, and just, contributing to a more equitable legal system.</p></li>
-                                </ol>
+                                <details>
+                                    <summary>Parameters to Consider for integration in the Tool:</summary>
+                                    <ol>
+                                        <li><p>Nature of the Offense and Penal Provisions: o Seek the inputs for the charges framed (can be multiple charges, and if they are compoundable etc). In this regard Statutes like Indian Penal Code,1860 and the upcoming Bhartiya Nyaya Sanhita 2023; Bhartiya Suraksha Sanhita 2023; and Bhartiya Saakshya Adhiniyam 2023; should be covered. Special statutes on the following under-mentioned areas should also be covered: 1. Cyber Crimes 2. Crimes Against SCs and STs: 3. Crimes Against Women 4. Crimes Against Children 5. Offences Against the State 6. Economic Offence 7. Crimes Against Foreigners a. Develop a comprehensive backend database to map penalties with sections of various Acts/Laws. b. Link and provide detailed information on the nature of offenses and corresponding legal provisions.</p></li>
+                                        <li><p>Duration of Imprisonment Already Served: a. Track the duration of imprisonment undertrial prisoner has served. b. Highlight the eligibility timeline for bail based on the time already served.</p></li>
+                                        <li><p>Considerations of Judge’s Discretion: a. Evaluate the risk of the undertrial prisoner escaping the judicial process, such as leaving the country. b. Assess the potential influence the prisoner may have on evidence or witnesses.</p></li>
+                                        <li><p>Procedural Pre-requisites: a. Outline requirements such as surety bonds, personal bonds, fines (if applicable), and identity verification. b. Ensure compliance with procedural aspects under IPC/CrPC.</p></li>
+                                        <li><p>Judicial Pronouncements on Bail Eligibility: a. Integrate key judicial pronouncements regarding bail eligibility. b. Automatically identify undertrial prisoners who are eligible for bail if they have served half the term during the undertrial stage, based on the prescribed sentence for their charges. Solution Requirements . The Bail Reckoner should be a user-friendly, plug-and-play tool that can be integrated into existing software systems. It must provide a clear and accessible interface for: 1. Undertrial Prisoners: To understand their eligibility and process for applying for bail. 2. Legal Aid Providers: To assist in preparing and submitting accurate bail applications. 3. Judicial Authorities: To streamline the evaluation process and ensure timely decisions. By leveraging technology and innovation, the Bail Reckoner aims to make the bail process more transparent, efficient, and just, contributing to a more equitable legal system.</p></li>
+                                    </ol>
+                                </details>
                             </td>
                         </tr>
                         <tr>
@@ -76,11 +78,15 @@
             <div>
                 <h3>Tech Architecture</h3>
                 <ul>
-                    <li>React Native</li>
+                    <li>React</li>
                     <li>Python Django</li>
+                    <li>PyTorch (LLMs & TBFE models)</li>
+                    <li>PostgreSQL</li>
                     <li>AWS (Cognito, S3, DynamoDB,..)</li>
                 </ul>
-                <img class="flowimg" src="assets/techflow.png" alt="">
+                <img class="flowimg" src="assets/BailFlow.jpg" alt="">
+                <img class="flowimg" src="assets/techflow.jpg" alt="">
+                <img class="flowimg" src="assets/userflow.jpg" alt="">
             </div>
         </section>
         <section id="design">
@@ -88,7 +94,7 @@
             <div class="design-system">
                 <div>
                     <h3>Branding</h3>
-                    <img class="logo" src="assets/KrishiMitra-Logo.png" alt="">
+                    <img class="logo" src="assets/BailReckoner-logo.png" alt="">
                 </div>
                 <div>
                     <h3>Font</h3>
@@ -120,14 +126,13 @@
         <section id="ui">
             <h2>User Interface</h2>
             <div class="screens ui">
-                <img class="screen" src="assets/FarmerHomeUI.jpg" alt="screen">
-                <img class="screen" src="assets/FarmerMyProductsUI.jpg" alt="screen">
-                <img class="screen" src="assets/FarmerAddProductsUI.jpg" alt="screen">
-                <img class="screen" src="assets/RetailerOrdersUI.png" alt="screen">
-                <img class="screen" src="assets/FarmerHomeUI.jpg" alt="screen">
-                <img class="screen" src="assets/FarmerHomeHindiUI.jpg" alt="screen">
-                <img class="screen" src="assets/FarmerMyProductsUI.jpg" alt="screen">
-                <img class="screen" src="assets/RetailerOrdersUI.png" alt="screen">
+                <img class="screen" src="assets/BRLogin.jpg" alt="screen">
+                <img class="screen" src="assets/BRLoginFilled.jpg" alt="screen">
+                <img class="screen" src="assets/BRHome.jpg" alt="screen">
+                <img class="screen" src="assets/BRHomeAdd.jpg" alt="screen">
+                <img class="screen" src="assets/BRHistory.jpg" alt="screen">
+                <img class="screen" src="assets/BRSupport.jpg" alt="screen">
+                <img class="screen" src="assets/BRSupportChat.jpg" alt="screen">
             </div>
         </section>
         <section id="techstack">
@@ -135,8 +140,10 @@
             <div>
                 <h3>Architecture</h3>
                 <ul>
-                    <li>React Native</li>
+                    <li>React</li>
                     <li>Python Django</li>
+                    <li>PyTorch (LLMs & TBFE models)</li>
+                    <li>PostgreSQL</li>
                     <li>AWS (Cognito, S3, DynamoDB,..)</li>
                 </ul>
                 <!-- <img class="flowimg" src="assets/techflow.png" alt=""> -->

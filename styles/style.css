@@ -1,7 +1,7 @@
 /* GENERAL */
 
 :root {
-    --color-primary: #009600;
+    --color-primary: #022A43;
 }
 
 /* Text selection color */
@@ -91,7 +91,7 @@ header {
     font-size: 12px;
     padding: 6px 12px;
     color: #fff;
-    background: #00960080;
+    background: #022A4380;
     border-radius: 4px;
     display: inline-block;
     transform: rotateZ(-25deg);
@@ -175,6 +175,7 @@ th {
 
 .logo {
     margin-top: 2rem;
+    height: 3rem;
 }
 
 .font {
@@ -199,7 +200,7 @@ th {
     background: #eee;
 }
 .c3 {
-    background: #00B812;
+    background: #022A43;
 }
 
 
