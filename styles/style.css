@@ -1,35 +1,3 @@
-/* GENERAL */
-
-:root {
-    --color-primary: #022A43;
-}
-
-/* Text selection color */
-::-moz-selection {
-    color: #fff;
-    background: var(--color-primary);
-}
-::selection {
-    color: #fff;
-    background: var(--color-primary);
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-    height: 8px;
-    width: 8px;
-}
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border-radius: 8px;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: #aaa;
-}
-
 /* DEFAULT */
 
 h2 {
@@ -146,14 +114,23 @@ th {
     text-decoration: none;
     color: #fff;
     background: var(--color-primary);
+    transition: all 0.3s;
+}
+.btn:hover {
+    opacity: 0.8;
 }
 
+.vidyt {
+    transition: all 0.3s;
+}
+.vidyt:hover {
+    transform: scale(98%);
+}
 .vidimg {
     max-width: 90vw;
     width: 500px;
     border-radius: 8px;
 }
-
 
 /* FLOW */
 
@@ -178,9 +155,19 @@ th {
     height: 3rem;
 }
 
+.fonts {
+    display: flex;
+    gap: 2rem;
+}
 .font {
     font-size: 6rem;
     font-family: Verdana, Tahoma, sans-serif;
+}
+.f1 {
+    font-family: sans-serif;
+}
+.f2 {
+    font-family: cursive;
 }
 
 .colors {
@@ -194,13 +181,16 @@ th {
     background: #000;
 }
 .c1 {
-    background: #111;
+    background: #1e1e1e;
 }
 .c2 {
     background: #eee;
 }
 .c3 {
     background: #022A43;
+}
+.c4 {
+    background: #022A4380;
 }
 
 
