@@ -134,9 +134,14 @@ th {
 
 /* FLOW */
 
+.flows {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
 .flowimg {
     max-width: 90vw;
-    width: 500px;
+    width: 450px;
     border-radius: 8px;
 }
 

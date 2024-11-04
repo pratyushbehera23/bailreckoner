@@ -41,7 +41,7 @@
                                     <ol>
                                         <li><p>Nature of the Offense and Penal Provisions: o Seek the inputs for the charges framed (can be multiple charges, and if they are compoundable etc). In this regard Statutes like Indian Penal Code,1860 and the upcoming Bhartiya Nyaya Sanhita 2023; Bhartiya Suraksha Sanhita 2023; and Bhartiya Saakshya Adhiniyam 2023; should be covered. Special statutes on the following under-mentioned areas should also be covered: 1. Cyber Crimes 2. Crimes Against SCs and STs: 3. Crimes Against Women 4. Crimes Against Children 5. Offences Against the State 6. Economic Offence 7. Crimes Against Foreigners a. Develop a comprehensive backend database to map penalties with sections of various Acts/Laws. b. Link and provide detailed information on the nature of offenses and corresponding legal provisions.</p></li>
                                         <li><p>Duration of Imprisonment Already Served: a. Track the duration of imprisonment undertrial prisoner has served. b. Highlight the eligibility timeline for bail based on the time already served.</p></li>
-                                        <li><p>Considerations of Judge’s Discretion: a. Evaluate the risk of the undertrial prisoner escaping the judicial process, such as leaving the country. b. Assess the potential influence the prisoner may have on evidence or witnesses.</p></li>
+                                        <li><p>Considerations of Judge's Discretion: a. Evaluate the risk of the undertrial prisoner escaping the judicial process, such as leaving the country. b. Assess the potential influence the prisoner may have on evidence or witnesses.</p></li>
                                         <li><p>Procedural Pre-requisites: a. Outline requirements such as surety bonds, personal bonds, fines (if applicable), and identity verification. b. Ensure compliance with procedural aspects under IPC/CrPC.</p></li>
                                         <li><p>Judicial Pronouncements on Bail Eligibility: a. Integrate key judicial pronouncements regarding bail eligibility. b. Automatically identify undertrial prisoners who are eligible for bail if they have served half the term during the undertrial stage, based on the prescribed sentence for their charges. Solution Requirements . The Bail Reckoner should be a user-friendly, plug-and-play tool that can be integrated into existing software systems. It must provide a clear and accessible interface for: 1. Undertrial Prisoners: To understand their eligibility and process for applying for bail. 2. Legal Aid Providers: To assist in preparing and submitting accurate bail applications. 3. Judicial Authorities: To streamline the evaluation process and ensure timely decisions. By leveraging technology and innovation, the Bail Reckoner aims to make the bail process more transparent, efficient, and just, contributing to a more equitable legal system.</p></li>
                                     </ol>
@@ -74,20 +74,39 @@
                 </div>
             </div>
         </section>
+        <!-- <section>
+            <h2>Take ons</h2>
+            <details open>
+                <summary>References</summary>
+                <ol></ol>
+            </details>
+        </section> -->
         <section id="flow">
             <h2>Process</h2>
-            <div>
-                <h3>Tech Architecture</h3>
-                <ul>
-                    <li>React, React-native</li>
-                    <li>Python Django</li>
-                    <li>PyTorch (LLMs & TBFE models)</li>
-                    <li>PostgreSQL</li>
-                    <li>AWS (Cognito, S3, DynamoDB,..)</li>
-                </ul>
-                <img class="flowimg" src="assets/BailFlow.jpg" alt="">
-                <img class="flowimg" src="assets/techflow.jpg" alt="">
-                <img class="flowimg" src="assets/userflow.jpg" alt="">
+            <div class="flows">
+                <div>
+                    <h3>User Flow</h3>
+                    <ul>
+                        <li>Bail user <span style="color: #777;">(Bail predictor, Bail form, Bail application management, Support)</span></li>
+                        <li>Advocate <span style="color: #777;">(Bail list management dashboard)</span></li>
+                        <li>Judge <span style="color: #777;">(Judgement dashboard)</span></li>
+                        <li>Bail data warehouse <span style="color: #777;">(Record-keeping dashboard for bail applications)</span></li>
+                    </ul>
+                    <img class="flowimg" src="assets/BailFlow.jpg" alt="">
+                </div>
+                <div>
+                    <h3>Tech Architecture</h3>
+                    <ul style="padding-bottom: 2rem;">
+                        <li>React, React-native</li>
+                        <li>Python Django</li>
+                        <li>PyTorch (LLMs & TBFE models)</li>
+                        <li>PostgreSQL</li>
+                        <li>AWS (Cognito, S3, DynamoDB,..)</li>
+                    </ul>
+                    <img class="flowimg" src="assets/techflow.jpg" alt="">
+                    <br>
+                    <img class="flowimg" src="assets/userflow.jpg" alt="">
+                </div>
             </div>
         </section>
         <section id="design">
@@ -130,6 +149,8 @@
         </section>
         <section id="ui">
             <h2>User Interface</h2>
+            <li>Bail User Application</li>
+            <br>
             <div class="screens ui">
                 <img class="screen" src="assets/BRLogin.jpg" alt="screen">
                 <img class="screen" src="assets/BRLoginFilled.jpg" alt="screen">
@@ -140,6 +161,13 @@
                 <img class="screen" src="assets/BRSupport.jpg" alt="screen">
                 <img class="screen" src="assets/BRSupportChat.jpg" alt="screen">
             </div>
+            <br>
+            <li>On-site ML based bail predictor</li>
+            <p style="padding: 1rem; padding-left: 2rem; color: #aaa; font-size: 1.2rem;">(Private)</p>
+            <li>Advocate interaction dashboard</li>
+            <p style="padding: 1rem; padding-left: 2rem; color: #aaa; font-size: 1.2rem;">(Private)</p>
+            <li>Judge decision dashboard</li>
+            <p style="padding-top: 1rem; padding-left: 2rem; color: #aaa; font-size: 1.2rem;">(Private)</p>
         </section>
         <section id="techstack">
             <h2>Technology</h2>
